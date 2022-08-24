@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    
+}
+img {
+   height: 100%;
+   width: 100%;
+   object-fit: cover; 
+}
+/* Desktop Design */
+body {
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.rating-state, .thankyou-state {
+    width: 415px;
+    height: 415px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: hsl(216, 12%, 8%);
+    padding: 30px;
+    border-radius: 20px;
+}
+.thankyou-state {
+    display: none;
+}
+.star-rating{
+    align-self: flex-start;
+    width: 40px;
+    height: 40px;
+    padding: 12px;
+    border-radius: 50%;
+    background-color: hsl(213, 19%, 18%);
+}
+h1 {
+    width: 100%;
+    color: hsl(0, 0%, 100%);
+    font-size: 30px;
+}
+p {
+    color: hsl(217, 12%, 63%);
+    line-height: 20px;
+}
+.rating {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.score {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding-top: 15px;
+    border-radius: 50%;
+    background-color: hsl(213, 19%, 18%);
+    color: hsl(217, 12%, 63%);
+    font-weight: 700; 
+}
+.score:hover {
+    background-color: hsl(216, 12%, 54%);
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.score .selected {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    transition: all 0.3s ease 0s;
+}
+button {
+    width: 100%;
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    padding: 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+button:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+/*Thank you state */
+.score-selection {
+    color: hsl(25, 97%, 53%);
+}
+.thankyou-state h1, .thankyou-state p {
+    text-align: center;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+}
+.attribution a {
+    color: hsl(0, 0%, 100%);
+}
+.attribution a:hover {
+    color: hsl(217, 12%, 63%);
+    transition: all 0.3s ease 0s;
+}
+
+/* Mobile Design */
+@media only screen and (max-width: 500px) {
+    .rating-state, .thankyou-state {
+        width: 330px;
+        height: 360px;
+        padding: 15px;
+    }
+}
